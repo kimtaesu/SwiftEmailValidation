@@ -19,6 +19,7 @@
 		BD43320B21F893930047EBE0 /* SwiftEmailValidationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43320A21F893930047EBE0 /* SwiftEmailValidationUITests.swift */; };
 		BD43321B21F894B60047EBE0 /* EmailValidationReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43321A21F894B60047EBE0 /* EmailValidationReactor.swift */; };
 		BD43321D21F897670047EBE0 /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43321C21F897670047EBE0 /* HasDisposeBag.swift */; };
+		BD43322121F8A7AD0047EBE0 /* UITextFieldForValidtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43322021F8A7AD0047EBE0 /* UITextFieldForValidtion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BD43320C21F893930047EBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD43321A21F894B60047EBE0 /* EmailValidationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationReactor.swift; sourceTree = "<group>"; };
 		BD43321C21F897670047EBE0 /* HasDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
+		BD43322021F8A7AD0047EBE0 /* UITextFieldForValidtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldForValidtion.swift; sourceTree = "<group>"; };
 		D28F5CBBCD4A63E02B3B5124 /* Pods-SwiftEmailValidationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidationTests/Pods-SwiftEmailValidationTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBBE9905B509741B280A5F54 /* Pods-SwiftEmailValidation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 		BD4331E621F893920047EBE0 /* SwiftEmailValidation */ = {
 			isa = PBXGroup;
 			children = (
+				BD43322021F8A7AD0047EBE0 /* UITextFieldForValidtion.swift */,
 				BD4331E721F893920047EBE0 /* AppDelegate.swift */,
 				BD4331E921F893920047EBE0 /* ViewController.swift */,
 				BD4331F121F893930047EBE0 /* Assets.xcassets */,
@@ -508,6 +511,7 @@
 				BD4331EA21F893920047EBE0 /* ViewController.swift in Sources */,
 				BD43321D21F897670047EBE0 /* HasDisposeBag.swift in Sources */,
 				BD43321B21F894B60047EBE0 /* EmailValidationReactor.swift in Sources */,
+				BD43322121F8A7AD0047EBE0 /* UITextFieldForValidtion.swift in Sources */,
 				BD4331E821F893920047EBE0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

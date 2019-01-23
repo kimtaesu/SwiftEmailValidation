@@ -14,6 +14,10 @@ enum ValidationResult: Equatable {
     case no(_ msg: String)
 }
 
+protocol EmailValidationResultState {
+    var email: String { get }
+    var validationResult: ValidationResult? { get }
+}
 
 class EmailValidationReactor: Reactor {
     internal let initialState: State = State(email: "")
@@ -22,7 +26,7 @@ class EmailValidationReactor: Reactor {
         case setEmail(String?)
     }
 
-    struct State {
+    struct State: EmailValidationResultState {
         var email: String
 
         public init(email: String) {
