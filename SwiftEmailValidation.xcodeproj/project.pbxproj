@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		539CF4108C7FD2D5798C08C6 /* Pods_SwiftEmailValidationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAFAB94C9C634C604DBD66A /* Pods_SwiftEmailValidationTests.framework */; };
+		8CD264A397C6CC59B4971748 /* Pods_SwiftEmailValidationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2859D0736732AD8121686A36 /* Pods_SwiftEmailValidationUITests.framework */; };
+		9AB7AD0B050A73B846E57122 /* Pods_SwiftEmailValidation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5731CD0CA6A146F55315571A /* Pods_SwiftEmailValidation.framework */; };
+		BD4331E821F893920047EBE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4331E721F893920047EBE0 /* AppDelegate.swift */; };
+		BD4331EA21F893920047EBE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4331E921F893920047EBE0 /* ViewController.swift */; };
+		BD4331F021F893920047EBE0 /* SwiftEmailValidation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD4331EE21F893920047EBE0 /* SwiftEmailValidation.xcdatamodeld */; };
+		BD4331F221F893930047EBE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD4331F121F893930047EBE0 /* Assets.xcassets */; };
+		BD4331F521F893930047EBE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4331F321F893930047EBE0 /* LaunchScreen.storyboard */; };
+		BD43320021F893930047EBE0 /* SwiftEmailValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4331FF21F893930047EBE0 /* SwiftEmailValidationTests.swift */; };
+		BD43320B21F893930047EBE0 /* SwiftEmailValidationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43320A21F893930047EBE0 /* SwiftEmailValidationUITests.swift */; };
+		BD43321B21F894B60047EBE0 /* EmailValidationReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43321A21F894B60047EBE0 /* EmailValidationReactor.swift */; };
+		BD43321D21F897670047EBE0 /* HasDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD43321C21F897670047EBE0 /* HasDisposeBag.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD4331FC21F893930047EBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD4331DC21F893920047EBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD4331E321F893920047EBE0;
+			remoteInfo = SwiftEmailValidation;
+		};
+		BD43320721F893930047EBE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD4331DC21F893920047EBE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD4331E321F893920047EBE0;
+			remoteInfo = SwiftEmailValidation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		057BB0CF3ADA2FBD6F9FF553 /* Pods-SwiftEmailValidationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidationTests/Pods-SwiftEmailValidationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		09CB1E9D9E78EBE8D5E3E49F /* Pods-SwiftEmailValidation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidation.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation.release.xcconfig"; sourceTree = "<group>"; };
+		2859D0736732AD8121686A36 /* Pods_SwiftEmailValidationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEmailValidationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAFAB94C9C634C604DBD66A /* Pods_SwiftEmailValidationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEmailValidationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5731CD0CA6A146F55315571A /* Pods_SwiftEmailValidation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftEmailValidation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E82D10E64F2C635B620A1A /* Pods-SwiftEmailValidationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidationUITests/Pods-SwiftEmailValidationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9B315E6E1F5E58914BCB9285 /* Pods-SwiftEmailValidationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidationUITests/Pods-SwiftEmailValidationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4331E421F893920047EBE0 /* SwiftEmailValidation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftEmailValidation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4331E721F893920047EBE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD4331E921F893920047EBE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD4331EF21F893920047EBE0 /* SwiftEmailValidation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftEmailValidation.xcdatamodel; sourceTree = "<group>"; };
+		BD4331F121F893930047EBE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD4331F421F893930047EBE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD4331F621F893930047EBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD4331FB21F893930047EBE0 /* SwiftEmailValidationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftEmailValidationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4331FF21F893930047EBE0 /* SwiftEmailValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEmailValidationTests.swift; sourceTree = "<group>"; };
+		BD43320121F893930047EBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD43320621F893930047EBE0 /* SwiftEmailValidationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftEmailValidationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD43320A21F893930047EBE0 /* SwiftEmailValidationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEmailValidationUITests.swift; sourceTree = "<group>"; };
+		BD43320C21F893930047EBE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD43321A21F894B60047EBE0 /* EmailValidationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationReactor.swift; sourceTree = "<group>"; };
+		BD43321C21F897670047EBE0 /* HasDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasDisposeBag.swift; sourceTree = "<group>"; };
+		D28F5CBBCD4A63E02B3B5124 /* Pods-SwiftEmailValidationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidationTests/Pods-SwiftEmailValidationTests.release.xcconfig"; sourceTree = "<group>"; };
+		DBBE9905B509741B280A5F54 /* Pods-SwiftEmailValidation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftEmailValidation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD4331E121F893920047EBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB7AD0B050A73B846E57122 /* Pods_SwiftEmailValidation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4331F821F893930047EBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				539CF4108C7FD2D5798C08C6 /* Pods_SwiftEmailValidationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD43320321F893930047EBE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD264A397C6CC59B4971748 /* Pods_SwiftEmailValidationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5072B5C161EB1F78AFA5BA31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE9905B509741B280A5F54 /* Pods-SwiftEmailValidation.debug.xcconfig */,
+				09CB1E9D9E78EBE8D5E3E49F /* Pods-SwiftEmailValidation.release.xcconfig */,
+				057BB0CF3ADA2FBD6F9FF553 /* Pods-SwiftEmailValidationTests.debug.xcconfig */,
+				D28F5CBBCD4A63E02B3B5124 /* Pods-SwiftEmailValidationTests.release.xcconfig */,
+				9B315E6E1F5E58914BCB9285 /* Pods-SwiftEmailValidationUITests.debug.xcconfig */,
+				94E82D10E64F2C635B620A1A /* Pods-SwiftEmailValidationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC79D77D7282977B91B44AF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5731CD0CA6A146F55315571A /* Pods_SwiftEmailValidation.framework */,
+				2FAFAB94C9C634C604DBD66A /* Pods_SwiftEmailValidationTests.framework */,
+				2859D0736732AD8121686A36 /* Pods_SwiftEmailValidationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD4331DB21F893920047EBE0 = {
+			isa = PBXGroup;
+			children = (
+				BD4331E621F893920047EBE0 /* SwiftEmailValidation */,
+				BD4331FE21F893930047EBE0 /* SwiftEmailValidationTests */,
+				BD43320921F893930047EBE0 /* SwiftEmailValidationUITests */,
+				BD4331E521F893920047EBE0 /* Products */,
+				5072B5C161EB1F78AFA5BA31 /* Pods */,
+				BC79D77D7282977B91B44AF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD4331E521F893920047EBE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD4331E421F893920047EBE0 /* SwiftEmailValidation.app */,
+				BD4331FB21F893930047EBE0 /* SwiftEmailValidationTests.xctest */,
+				BD43320621F893930047EBE0 /* SwiftEmailValidationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD4331E621F893920047EBE0 /* SwiftEmailValidation */ = {
+			isa = PBXGroup;
+			children = (
+				BD4331E721F893920047EBE0 /* AppDelegate.swift */,
+				BD4331E921F893920047EBE0 /* ViewController.swift */,
+				BD4331F121F893930047EBE0 /* Assets.xcassets */,
+				BD4331F321F893930047EBE0 /* LaunchScreen.storyboard */,
+				BD4331F621F893930047EBE0 /* Info.plist */,
+				BD4331EE21F893920047EBE0 /* SwiftEmailValidation.xcdatamodeld */,
+				BD43321A21F894B60047EBE0 /* EmailValidationReactor.swift */,
+				BD43321C21F897670047EBE0 /* HasDisposeBag.swift */,
+			);
+			path = SwiftEmailValidation;
+			sourceTree = "<group>";
+		};
+		BD4331FE21F893930047EBE0 /* SwiftEmailValidationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD4331FF21F893930047EBE0 /* SwiftEmailValidationTests.swift */,
+				BD43320121F893930047EBE0 /* Info.plist */,
+			);
+			path = SwiftEmailValidationTests;
+			sourceTree = "<group>";
+		};
+		BD43320921F893930047EBE0 /* SwiftEmailValidationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD43320A21F893930047EBE0 /* SwiftEmailValidationUITests.swift */,
+				BD43320C21F893930047EBE0 /* Info.plist */,
+			);
+			path = SwiftEmailValidationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD4331E321F893920047EBE0 /* SwiftEmailValidation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD43320F21F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidation" */;
+			buildPhases = (
+				6CE95857751D140A7406937B /* [CP] Check Pods Manifest.lock */,
+				BD4331E021F893920047EBE0 /* Sources */,
+				BD4331E121F893920047EBE0 /* Frameworks */,
+				BD4331E221F893920047EBE0 /* Resources */,
+				D18270BF9D2AFD6301D7CFEE /* [CP] Embed Pods Frameworks */,
+				56B9E93726011844E31350B3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftEmailValidation;
+			productName = SwiftEmailValidation;
+			productReference = BD4331E421F893920047EBE0 /* SwiftEmailValidation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD4331FA21F893930047EBE0 /* SwiftEmailValidationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD43321221F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidationTests" */;
+			buildPhases = (
+				B9B68F3CBC5102A7CC55E1B6 /* [CP] Check Pods Manifest.lock */,
+				BD4331F721F893930047EBE0 /* Sources */,
+				BD4331F821F893930047EBE0 /* Frameworks */,
+				BD4331F921F893930047EBE0 /* Resources */,
+				DFEBD962958876F84616CFA8 /* [CP] Embed Pods Frameworks */,
+				164404A6E29B3E4A09A825DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD4331FD21F893930047EBE0 /* PBXTargetDependency */,
+			);
+			name = SwiftEmailValidationTests;
+			productName = SwiftEmailValidationTests;
+			productReference = BD4331FB21F893930047EBE0 /* SwiftEmailValidationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD43320521F893930047EBE0 /* SwiftEmailValidationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD43321521F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidationUITests" */;
+			buildPhases = (
+				37AED9F7B1F422D1DBA9A294 /* [CP] Check Pods Manifest.lock */,
+				BD43320221F893930047EBE0 /* Sources */,
+				BD43320321F893930047EBE0 /* Frameworks */,
+				BD43320421F893930047EBE0 /* Resources */,
+				3887C215B95AA8D287E3CD9B /* [CP] Embed Pods Frameworks */,
+				64D3B41B5B5BE33D88E11AE4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD43320821F893930047EBE0 /* PBXTargetDependency */,
+			);
+			name = SwiftEmailValidationUITests;
+			productName = SwiftEmailValidationUITests;
+			productReference = BD43320621F893930047EBE0 /* SwiftEmailValidationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD4331DC21F893920047EBE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = hucet;
+				TargetAttributes = {
+					BD4331E321F893920047EBE0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					BD4331FA21F893930047EBE0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD4331E321F893920047EBE0;
+					};
+					BD43320521F893930047EBE0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = BD4331E321F893920047EBE0;
+					};
+				};
+			};
+			buildConfigurationList = BD4331DF21F893920047EBE0 /* Build configuration list for PBXProject "SwiftEmailValidation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD4331DB21F893920047EBE0;
+			productRefGroup = BD4331E521F893920047EBE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD4331E321F893920047EBE0 /* SwiftEmailValidation */,
+				BD4331FA21F893930047EBE0 /* SwiftEmailValidationTests */,
+				BD43320521F893930047EBE0 /* SwiftEmailValidationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD4331E221F893920047EBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4331F521F893930047EBE0 /* LaunchScreen.storyboard in Resources */,
+				BD4331F221F893930047EBE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4331F921F893930047EBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD43320421F893930047EBE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		164404A6E29B3E4A09A825DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidationTests/Pods-SwiftEmailValidationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37AED9F7B1F422D1DBA9A294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftEmailValidationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3887C215B95AA8D287E3CD9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidationUITests/Pods-SwiftEmailValidationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56B9E93726011844E31350B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64D3B41B5B5BE33D88E11AE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidationUITests/Pods-SwiftEmailValidationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE95857751D140A7406937B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftEmailValidation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B68F3CBC5102A7CC55E1B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftEmailValidationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18270BF9D2AFD6301D7CFEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidation/Pods-SwiftEmailValidation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFEBD962958876F84616CFA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftEmailValidationTests/Pods-SwiftEmailValidationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD4331E021F893920047EBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD4331F021F893920047EBE0 /* SwiftEmailValidation.xcdatamodeld in Sources */,
+				BD4331EA21F893920047EBE0 /* ViewController.swift in Sources */,
+				BD43321D21F897670047EBE0 /* HasDisposeBag.swift in Sources */,
+				BD43321B21F894B60047EBE0 /* EmailValidationReactor.swift in Sources */,
+				BD4331E821F893920047EBE0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD4331F721F893930047EBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD43320021F893930047EBE0 /* SwiftEmailValidationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD43320221F893930047EBE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD43320B21F893930047EBE0 /* SwiftEmailValidationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD4331FD21F893930047EBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD4331E321F893920047EBE0 /* SwiftEmailValidation */;
+			targetProxy = BD4331FC21F893930047EBE0 /* PBXContainerItemProxy */;
+		};
+		BD43320821F893930047EBE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD4331E321F893920047EBE0 /* SwiftEmailValidation */;
+			targetProxy = BD43320721F893930047EBE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD4331F321F893930047EBE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD4331F421F893930047EBE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD43320D21F893930047EBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD43320E21F893930047EBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD43321021F893930047EBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBE9905B509741B280A5F54 /* Pods-SwiftEmailValidation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD43321121F893930047EBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CB1E9D9E78EBE8D5E3E49F /* Pods-SwiftEmailValidation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD43321321F893930047EBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057BB0CF3ADA2FBD6F9FF553 /* Pods-SwiftEmailValidationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftEmailValidation.app/SwiftEmailValidation";
+			};
+			name = Debug;
+		};
+		BD43321421F893930047EBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28F5CBBCD4A63E02B3B5124 /* Pods-SwiftEmailValidationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftEmailValidation.app/SwiftEmailValidation";
+			};
+			name = Release;
+		};
+		BD43321621F893930047EBE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B315E6E1F5E58914BCB9285 /* Pods-SwiftEmailValidationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftEmailValidation;
+			};
+			name = Debug;
+		};
+		BD43321721F893930047EBE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E82D10E64F2C635B620A1A /* Pods-SwiftEmailValidationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 576T8HK6X4;
+				INFOPLIST_FILE = SwiftEmailValidationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hucet.SwiftEmailValidationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftEmailValidation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD4331DF21F893920047EBE0 /* Build configuration list for PBXProject "SwiftEmailValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD43320D21F893930047EBE0 /* Debug */,
+				BD43320E21F893930047EBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD43320F21F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD43321021F893930047EBE0 /* Debug */,
+				BD43321121F893930047EBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD43321221F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD43321321F893930047EBE0 /* Debug */,
+				BD43321421F893930047EBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD43321521F893930047EBE0 /* Build configuration list for PBXNativeTarget "SwiftEmailValidationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD43321621F893930047EBE0 /* Debug */,
+				BD43321721F893930047EBE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD4331EE21F893920047EBE0 /* SwiftEmailValidation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD4331EF21F893920047EBE0 /* SwiftEmailValidation.xcdatamodel */,
+			);
+			currentVersion = BD4331EF21F893920047EBE0 /* SwiftEmailValidation.xcdatamodel */;
+			path = SwiftEmailValidation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BD4331DC21F893920047EBE0 /* Project object */;
+}
